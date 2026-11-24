@@ -273,6 +273,10 @@ SRX-Advanced-Security-Policies/
 
 See [Application-Based Security Policy Matching and Logging](docs/advanced-security-policy-matching.md) for the full lab notes and configuration walkthrough.
 
+## Related lab
+
+This repository is paired with [SRX-Address-Books-and-Policy-Ordering](https://github.com/emadalshishani/SRX-Address-Books-and-Policy-Ordering). The follow-up lab reuses the Ubuntu DNS deny policy created here to demonstrate Global Address Sets, nested Address Sets, and Security Policy ordering / policy shadowing.
+
 ## Future experiments
 
 Additional topics will be added only after they have been configured, tested, and verified. Planned candidates include Address Sets, custom applications, policy ordering, policy scheduling, and further policy troubleshooting.
