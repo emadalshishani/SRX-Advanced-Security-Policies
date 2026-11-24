@@ -130,10 +130,7 @@ run show log messages | match RT_FLOW_SESSION | match udp
 Representative log entry captured from the SRX:
 
 ```text
-Nov 23 19:51:42 HQ RT_FLOW: RT_FLOW_SESSION_DENY:
-session denied 192.168.30.2/51154->8.8.8.8/53 0x0
-junos-dns-udp 17(0) internal-branch_ubuntu-user-test
-internal branch ... ge-0/0/0.0 No Denied by policy
+Nov 23 19:51:42  HQ RT_FLOW: RT_FLOW_SESSION_DENY: session denied 192.168.30.2/51154->8.8.8.8/53 0x0 junos-dns-udp 17(0) internal-branch_ubuntu-user-test internal branch UNKNOWN UNKNOWN N/A(N/A) ge-0/0/0.0 No Denied by policy 7511 N/A N/A -1 N/A N/A N/A N/A N/A N/A
 ```
 
 **What this proves:**
@@ -181,10 +178,7 @@ run show log messages | match RT_FLOW_SESSION | match tcp
 Representative log entry captured from the SRX:
 
 ```text
-Nov 23 19:56:46 HQ RT_FLOW: RT_FLOW_SESSION_DENY:
-session denied 192.168.30.2/44748->8.8.8.8/53 0x0
-junos-dns-tcp 6(0) internal-branch_ubuntu-user-test
-internal branch ... ge-0/0/0.0 No Denied by policy
+Nov 23 19:56:46  HQ RT_FLOW: RT_FLOW_SESSION_DENY: session denied 192.168.30.2/44748->8.8.8.8/53 0x0 junos-dns-tcp 6(0) internal-branch_ubuntu-user-test internal branch UNKNOWN UNKNOWN N/A(N/A) ge-0/0/0.0 No Denied by policy 7604 N/A N/A -1 N/A N/A N/A N/A N/A N/A
 ```
 
 **What this proves:**
@@ -219,10 +213,7 @@ run show log messages | match RT_FLOW_SESSION | match icmp
 Representative log entry captured from the SRX:
 
 ```text
-Nov 23 19:58:08 HQ RT_FLOW: RT_FLOW_SESSION_DENY:
-session denied 192.168.30.2/12->8.8.8.8/11 0x0
-icmp 1(8) internal-branch_ubuntu-user-test
-internal branch ... ge-0/0/0.0 No Denied by policy
+Nov 23 19:58:08  HQ RT_FLOW: RT_FLOW_SESSION_DENY: session denied 192.168.30.2/12->8.8.8.8/11 0x0 icmp 1(8) internal-branch_ubuntu-user-test internal branch UNKNOWN UNKNOWN N/A(N/A) ge-0/0/0.0 No Denied by policy 7645 N/A N/A -1 N/A N/A N/A N/A N/A N/A
 ```
 
 **What this proves:**
